@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Caption Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Instagram Caption Generator</h1>
+            <button id="themeToggle" aria-label="Toggle dark mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </header>
+        
+        <main>
+            <div class="upload-section">
+                <div class="image-preview-container">
+                    <img id="imagePreview" src="" alt="Preview" style="display: none;">
+                    <div id="uploadPlaceholder">
+                        <span class="upload-icon">📸</span>
+                        <p>Upload your image</p>
+                    </div>
+                </div>
+                <input type="file" id="imageUpload" accept="image/*" class="file-input">
+                <label for="imageUpload" class="upload-btn">Choose Image</label>
+            </div>
+
+            <div class="caption-container">
+                <p id="caption" class="caption-text">Upload an image to get a relevant caption!</p>
+            </div>
+            
+            <button id="generateBtn" class="generate-btn">
+                Get Caption
+            </button>
+        </main>
+
+        <div class="developer-credit">
+            <span class="credit-text">Developed by</span>
+            <span class="developer-name">Tanisha Kavrani</span>
+            <div class="credit-decoration"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
